@@ -18,13 +18,12 @@ int main(void)
 		putchar(ch);
 		ch++;
 	}
-
 	/*prints A - Z*/
-        while (CH <= 'Z')
-        {
-                putchar(CH);
-                CH++;
-        }
+	while (CH <= 'Z')
+	{
+		putchar(CH);
+		CH++;
+	}
 	putchar('\n');
 
 	return (0);
