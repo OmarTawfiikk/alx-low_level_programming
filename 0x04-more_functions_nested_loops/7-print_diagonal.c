@@ -2,12 +2,11 @@
 
 /**
  * print_diagonal - Draws a diagonal lines according parameter
- *@n: is number of times print diagonal lines
- *Return: empty
+ * @n: The number of times to print diagonal lines
+ * Return: empty
  */
 
 void print_diagonal(int n)
-
 {
 
 	int x, y;
@@ -20,7 +19,7 @@ void print_diagonal(int n)
 	{
 	for (x = 0; x < n; x++)
 	{
-	for (y = 0; y < n; y++)
+	for (y = 0; y < x; y++)
 	{
 	_putchar(32);
 	}
