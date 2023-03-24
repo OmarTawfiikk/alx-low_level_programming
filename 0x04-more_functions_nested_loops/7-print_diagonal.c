@@ -2,10 +2,9 @@
 
 /**
  * print_diagonal - print diagonal line
- *
- * @n: is number of times the \ character
- * should be printed*
-*/
+ *@n: is number of times the \ character should be printed
+ */
+
 void print_diagonal(int n)
 {
 	int postn, space;
