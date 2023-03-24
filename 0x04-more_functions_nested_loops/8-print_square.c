@@ -12,7 +12,7 @@ void print_square(int size)
 {
 	int row, column;
 
-	if (size == 0)
+	if (size <= 0)
 	{
 		printf('\n');
 		else
