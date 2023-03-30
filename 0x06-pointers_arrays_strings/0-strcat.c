@@ -3,6 +3,7 @@
 
 /**
  * _strcat - function that concatenat two strings
+ * @dest: the destination of string
  * @src: pointer to soutce input
  *
  * Retuen: always 0
@@ -10,15 +11,18 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int c, c2;
+	int c = 0, c2;
 
-	c=0;
-	/*find the size*/
 	while (dest[c])
+	{
 		c++;
+	}
 
-	for (c2 = 0; src[c2], c2++)
+	for (c2 = 0; src[c2] != 0; c2++)
+	{
 		dest[c++] = src[c2];
+	}
 
+	dest[c] = '\0';
 	return (dest);
 }
