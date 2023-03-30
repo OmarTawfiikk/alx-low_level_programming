@@ -9,23 +9,20 @@
 
 char *leet(char *c);
 {
-	char *cp = c;
-	char key[] = {'A', 'E', 'O', 'T', 'L'};
-	int value[] = {4, 3, 0, 7, 1};
-	unsigned int i;
+	int i, j;
+	char s1[] = "aAeEoOtTlL";
+	int s2[] = "4433007711";
 
-	while (*c)
+	for (i = 0; c[i] != '\0'; i++)
 	{
-		for (i = 0; i < sizeof(key) / sizeof(char); i++)
+		for (j = 0; j < 10; j++)
 		{
-			if (*c == key[i] || *c == key[i] + 32)
+			if (c[i] == s1[j])
 			{
-				*c = 40 + value[i];
+				c[i] = s2[j];
 			}
 		}
-		c++;
 	}
-
-	return (cp);
+	return (c);
 
 }
