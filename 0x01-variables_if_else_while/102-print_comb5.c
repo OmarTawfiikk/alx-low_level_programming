@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include <srdlib.h>
+#include <stdlib.h>
 #include <time.h>
 
 /**
- * main - Entry point
+ * main - Entery point
  * Return: Always 0
  */
 
@@ -11,22 +11,22 @@ int main(void)
 
 {
 
-	int i, j;
+	int p, q;
 
-	for (i = 0; i <= 98; i++)
+	for (p = 0; p <= 98; p++)
 	{
 
-		for (j = i + 1; j <= 99; j++)
+		for (q = p + 1; q <= 99; q++)
 		{
-			putchar((i / 10) + '0');
-			putchar((i % 10) + '0');
-			putchar(' ');
-			putchar((j / 10) + '0');
-			putchar((j % 10) + '0');
-			if (i == 98 && j == 99)
-				continue;
-			putchar(',');
-			putchar(' ');
+		putchar((p / 10) + '0');
+		putchar((p % 10) + '0');
+		putchar(' ');
+		putchar((q / 10) + '0');
+		putchar((q % 10) + '0');
+		if (p == 98 && q == 99)
+			continue;
+		putchar(',');
+		putchar(' ');
 		}
 	}
 	putchar('\n');
